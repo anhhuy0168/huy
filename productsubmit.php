@@ -21,7 +21,7 @@ $result = pg_query($connect, $query);
 //echo ("Connect successfully!");
 if ($result) {
   echo "<script>alert('Record added succesfully!, Refresh');</script>";
-  header('refresh: 3; url=login.php');
+  header('refresh: 1; url=login.php');
 } else {
   echo ("ERROR + $query") . pg_errormessage($query);
 }
