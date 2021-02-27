@@ -1,16 +1,13 @@
 <?php
-$con = pg_connect("host=ec2-52-70-67-123.compute-1.amazonaws.com
-dbname=dbgcikc8b0oi2e
-port=5432
-user=wcqwugsizdbqdo
-password=cdf3aa4678d3872427da74f1e740ac79f7473d9e56630c4731dea41bcbd3d04e
-sslmode=require");
-
-$query = "select ID, name, price from product ;";
-$result = pg_query($con, $query);
-$resultCheck = pg_num_rows($result);
+$host"ec2-52-70-67-123.compute-1.amazonaws.com";
+$con = pg_connect($connection_string);
+$dbname ="dbgcikc8b0oi2e";
+$port="5432";
+$user="wcqwugsizdbqdo"
+$password="cdf3aa4678d3872427da74f1e740ac79f7473d9e56630c4731dea41bcbd3d04e"
+$query = "select * from product ";
+$result = pg_query($dbconn, $query);
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
