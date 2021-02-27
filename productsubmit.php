@@ -14,13 +14,13 @@ sslmode=require");
   $category = $_POST['Category'];
   $price = $_POST['Amount'];
 }
-echo ("Connect successfully!");
+//echo ("Connect successfully!");
 $query = "INSERT INTO product (ID, shop, name, category, price) 
 VALUES('$ID', '$shop', '$name', '$category', '$price');";
 $result = pg_query($connect, $query);
 if ($result) {
   echo "<script>alert('Record added succesfully!, Refresh');</script>";
-  header('refresh: 3; url=productform.php');
+  header('refresh: 3; url=login.php');
 } else {
   echo ("ERROR + $query") . pg_errormessage($query);
 }
