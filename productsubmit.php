@@ -1,4 +1,5 @@
 <?php
+echo ("Connect successfully!");
 $connect = pg_connect("host=ec2-52-70-67-123.compute-1.amazonaws.com
 dbname=dbgcikc8b0oi2e
 port=5432
