@@ -8,8 +8,7 @@
   $dbconn = pg_connect($connection_string);
   $query = "select * from product";
   $result = pg_query($dbconn,$query);
-?>
-if ($connect === false) {
+  if ($connect === false) {
   die("ERROR: Could not connect to the database server!");
 } else {
   //echo ("Connect successfully!");
