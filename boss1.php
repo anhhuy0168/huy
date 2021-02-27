@@ -8,6 +8,7 @@ sslmode=require");
 $query =" SELECT ID, shop, name, category, amount FROM product ;";
 $result = pg_query($con, $query);
 $resultCheck = pg_num_rows($result);
+echo("hello");
 ?>
 <!DOCTYPE html>
 <html lang="en">
