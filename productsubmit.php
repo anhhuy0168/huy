@@ -9,12 +9,11 @@ echo ("Connect");
   if ($connect === false) {
   die("ERROR: Could not connect to the database server!");
 } else {
-  //echo ("Connect successfully!");
-  $product_name = $_POST['ID'];
-  $product_price = $_POST['shop'];
-  $product_category = $_POST['name'];
-  $product_quantity = $_POST['category'];
-  $product_description = $_POST['price'];
+  $ID = $_POST['ID'];
+  $shop = $_POST['Shop'];
+  $name = $_POST['Name'];
+  $category = $_POST['Category'];
+  $price = $_POST['Amount'];
 }
 //echo ("Connect successfully!");
 $query = "INSERT INTO product (ID, shop, name, category, price) 
