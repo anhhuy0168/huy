@@ -12,18 +12,18 @@ sslmode=require");
   $shop = $_POST['Shop'];
   $name = $_POST['Name'];
   $category = $_POST['Category'];
-  $price = $_POST['Amount'];
+  $amount = $_POST['Amount'];
 }
 //echo ("Connect successfully!");
-$query = "INSERT INTO product (ID, shop, name, category, price) 
-VALUES('$ID', '$shop', '$name', '$category', '$price');";
+$query = "INSERT INTO product (ID, shop, name, category, amount) 
+VALUES('$ID', '$shop', '$name', '$category', '$amount');";
 $result = pg_query($connect, $query);
 //echo ("Connect successfully!");
-/*if ($result) {
+if ($result) {
   echo "<script>alert('Record added succesfully!, Refresh');</script>";
   header('refresh: 3; url=login.php');
 } else {
   echo ("ERROR + $query") . pg_errormessage($query);
-}*/
+}
 
 pg_close($connect);
