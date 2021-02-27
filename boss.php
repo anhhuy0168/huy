@@ -53,7 +53,7 @@ $resultCheck = pg_num_rows($result);
                 <td><?php echo $row['product_category']; ?></td>
                 <td><?php echo $row['product_price,']; ?></td>
               </tr>
-          <?php
+         
             }
           } else {
             echo "<script>alert('Connect fail!');</script>" . pg_errormessage($query);
