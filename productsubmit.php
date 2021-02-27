@@ -1,11 +1,11 @@
 <?php
-echo ("Connect successfully!");
 $connect = pg_connect("host=ec2-52-70-67-123.compute-1.amazonaws.com
 dbname=dbgcikc8b0oi2e
 port=5432
 user=wcqwugsizdbqdo
 password=cdf3aa4678d3872427da74f1e740ac79f7473d9e56630c4731dea41bcbd3d04e
 sslmode=require");
+echo ("Connect");
   if ($connect === false) {
   die("ERROR: Could not connect to the database server!");
 } else {
