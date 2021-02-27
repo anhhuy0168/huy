@@ -8,14 +8,13 @@ sslmode=require");
   if ($connect === false) {
   die("ERROR: Could not connect to the database server!");
 } else {
- echo ("hello");
   $ID = $_POST['ID'];
   $shop = $_POST['Shop'];
   $name = $_POST['Name'];
   $category = $_POST['Category'];
   $price = $_POST['Amount'];
 }
-//echo ("Connect successfully!");
+echo ("Connect successfully!");
 $query = "INSERT INTO product (ID, shop, name, category, price) 
 VALUES('$ID', '$shop', '$name', '$category', '$price');";
 $result = pg_query($connect, $query);
