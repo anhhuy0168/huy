@@ -5,8 +5,7 @@ port=5432
 user=wcqwugsizdbqdo
 password=cdf3aa4678d3872427da74f1e740ac79f7473d9e56630c4731dea41bcbd3d04e
 sslmode=require");
-echo ("Hello!");
-$query = "select * FROM product;";
+$query =" SELECT ID, shop, name, category, amount FROM product ;";
 $result = pg_query($con, $query);
 $resultCheck = pg_num_rows($result);
 ?>
