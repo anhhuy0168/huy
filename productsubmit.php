@@ -8,6 +8,7 @@ sslmode=require");
   if ($connect === false) {
   die("ERROR: Could not connect to the database server!");
 } else {
+ echo ("hello")
   $ID = $_POST['ID'];
   $shop = $_POST['Shop'];
   $name = $_POST['Name'];
