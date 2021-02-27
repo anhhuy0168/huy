@@ -1,12 +1,12 @@
 <?php
-$con = pg_connect("host=ec2-52-70-67-123.compute-1.amazonaws.com
+$connect = pg_connect("host=ec2-52-70-67-123.compute-1.amazonaws.com
 dbname=dbgcikc8b0oi2e
 port=5432
 user=wcqwugsizdbqdo
 password=cdf3aa4678d3872427da74f1e740ac79f7473d9e56630c4731dea41bcbd3d04e
-                    sslmode=require");
+sslmode=require");
 
-$query = "select product_id, product_name, product_price, product_category, atn_store, product_quantity, product_description from product ;";
+$query = "select * FROM product";
 $result = pg_query($con, $query);
 $resultCheck = pg_num_rows($result);
 ?>
@@ -38,7 +38,7 @@ $resultCheck = pg_num_rows($result);
             <th>Shop</th>
             <th>Name</th>
             <th>Category</th>
-            <th>Price</th>
+            <th>Amount</th>
             
           </tr>
         </thead>
@@ -53,7 +53,7 @@ $resultCheck = pg_num_rows($result);
                 <td><?php echo $row['shop']; ?></td>
                 <td><?php echo $row['name']; ?></td>
                 <td><?php echo $row['category']; ?></td>
-                <td><?php echo $row['price']; ?></td>
+                <td><?php echo $row['amount']; ?></td>
               </tr>
           <?php
             }
