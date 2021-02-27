@@ -1,9 +1,9 @@
 <?php
-$con = pg_connect("host=ec2-52-205-3-3.compute-1.amazonaws.com
-dbname=d6174t0mn24pgb
+$con = pg_connect("host=ec2-52-70-67-123.compute-1.amazonaws.com
+dbname=dbgcikc8b0oi2e
 port=5432
-user=xcwnjjsuwpvisp
-password=09c7930a3f9d7f70bdd41b079ad446605d77849a11ba715d9ba71e58a836a1b0
+user=wcqwugsizdbqdo
+password=cdf3aa4678d3872427da74f1e740ac79f7473d9e56630c4731dea41bcbd3d04e
 sslmode=require");
 
 $query = "select product_ID, product_name, product_price from product ;";
