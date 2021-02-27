@@ -5,7 +5,7 @@ $password = $_POST['password'];
     if ($username == 'staff' && $password == '123') {
         header("location:staff.html");
     } elseif ($username == 'admin' && $password == '123456') {
-        header("location:boss.php");
+        header("location:boss1.php");
     } else
     {
         echo "incorrect username and password";
