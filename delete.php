@@ -8,7 +8,7 @@ sslmode=require");
 if ($connect === false) {
   die("ERROR: Could not connect to the database server!");
 } else {
-  $id = $_GET['ID'];
+  $id = $_GET['id'];
 }
 //echo ("Connect successfully!");
 $del =  "delete from product where id ='$id'";
