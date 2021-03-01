@@ -10,6 +10,7 @@ if ($connectd === false) {
     } else {
       $id = $_POST['id'];
     }
+echo("hello);
     $query = "DELETE FROM Product WHERE id = '$id';";
     $result = pg_query($connectd, $query);
     if ($result) {
