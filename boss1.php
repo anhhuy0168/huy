@@ -62,7 +62,7 @@ $resultCheck = pg_num_rows($result);
           ?>
         </tbody>
       </table>
-      <a href="./bosslogout.php">
+      <a href="./login.html">
         <h3 id="sign-out"> LOG OUT </h3>
       </a>
     </div>
