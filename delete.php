@@ -5,7 +5,7 @@ port=5432
 user=wcqwugsizdbqdo
 password=cdf3aa4678d3872427da74f1e740ac79f7473d9e56630c4731dea41bcbd3d04e
 sslmode=require");
-if ($connectd === false) {
+if ($connect === false) {
       die("ERROR: Could not connect to the database server!");
     } else {
       $id = $_POST['id'];
