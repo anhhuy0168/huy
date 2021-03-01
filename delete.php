@@ -11,7 +11,7 @@ if ($connect === false) {
   $ID = $_GET['ID'];
 }
 //echo ("Connect successfully!");
-$del =  "delete from product where ID='$ID'";
+$del =  "delete from product where ID ='$ID'";
 $data = pg_query($connect,$del);
 if ($data) {
   echo "<script>alert('Edited succesfully!, Refresh');</script>";
